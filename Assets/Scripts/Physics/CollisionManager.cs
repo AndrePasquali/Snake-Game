@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using Extensions;
 using MinoGames.SnakeGame.Gameplay;
 using MinoGames.SnakeGame.Item;
 using MinoGames.SnakeGame.UI;
@@ -26,7 +25,6 @@ namespace MinoGames.SnakeGame.Physics
                     break;
                 case "Wall":
                     GameManager.OnPlayerHitWallAction.Invoke(playerId);
-                    Debug.Log($"WALL HIT: {playerId}");
                     break;
                 case "Player": break;
                 case "Weapon":
